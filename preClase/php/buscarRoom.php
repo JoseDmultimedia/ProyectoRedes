@@ -25,7 +25,7 @@
 <table border="10px">
     <tr><th>temperatura</th><th>humedad</th><th>movimiento</th><th>luz</th><th>toque</th><th>fecha</th><th>hora</th></tr>
     <?php
-    $algoabuscar = $_POST["buscar"];
+    $algoabuscar = $_POST["Objeto"];
     $url_rest = "http://Project-josedavgarcia615767.codeanyapp.com/smartroom/$algoabuscar";
     $curl = curl_init($url_rest);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -59,7 +59,7 @@
 
 </div>
     
-<div class="o-link"><a href="../html/index.html">VOLVER</a></div>
+<div class="o-link"><a href="../html/dashboardAdmin.html">VOLVER</a></div>
 
 
 </div>
